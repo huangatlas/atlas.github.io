@@ -7,14 +7,17 @@
   
   <title>Hello! Hexo | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="flowst=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]e=&amp;gt;end: End:&amp;gt;http://www.google.comop1=&amp;gt;operation: get_hotel_ids|pastop2=&amp;gt;operation: get_proxy|currentsub1=&amp;gt;subroutine: get_p">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hello! Hexo">
 <meta property="og:url" content="http://yoursite.com/2018/08/03/Hello-Hexo/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="flowst=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]e=&amp;gt;end: End:&amp;gt;http://www.google.comop1=&amp;gt;operation: get_hotel_ids|pastop2=&amp;gt;operation: get_proxy|currentsub1=&amp;gt;subroutine: get_p">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-03T09:31:08.358Z">
+<meta property="og:updated_time" content="2018-08-03T14:38:32.884Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello! Hexo">
+<meta name="twitter:description" content="flowst=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]e=&amp;gt;end: End:&amp;gt;http://www.google.comop1=&amp;gt;operation: get_hotel_ids|pastop2=&amp;gt;operation: get_proxy|currentsub1=&amp;gt;subroutine: get_p">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -83,7 +86,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>flow<br>st=&gt;start: Start|past:&gt;<a href="http://www.google.com[blank]" target="_blank" rel="noopener">http://www.google.com[blank]</a><br>e=&gt;end: End:&gt;<a href="http://www.google.com" target="_blank" rel="noopener">http://www.google.com</a><br>op1=&gt;operation: get_hotel_ids|past<br>op2=&gt;operation: get_proxy|current<br>sub1=&gt;subroutine: get_proxy|current<br>op3=&gt;operation: save_comment|current<br>op4=&gt;operation: set_sentiment|current<br>op5=&gt;operation: set_record|current</p>
+<p>cond1=&gt;condition: ids_remain空?<br>cond2=&gt;condition: proxy_list空?<br>cond3=&gt;condition: ids_got空?<br>cond4=&gt;condition: 爬取成功??<br>cond5=&gt;condition: ids_remain空?</p>
+<p>io1=&gt;inputoutput: ids-remain<br>io2=&gt;inputoutput: proxy_list<br>io3=&gt;inputoutput: ids-got</p>
+<p>st-&gt;op1(right)-&gt;io1-&gt;cond1<br>cond1(yes)-&gt;sub1-&gt;io2-&gt;cond2<br>cond2(no)-&gt;op3<br>cond2(yes)-&gt;sub1<br>cond1(no)-&gt;op3-&gt;cond4<br>cond4(yes)-&gt;io3-&gt;cond3<br>cond4(no)-&gt;io1<br>cond3(no)-&gt;op4<br>cond3(yes, right)-&gt;cond5<br>cond5(yes)-&gt;op5<br>cond5(no)-&gt;cond3<br>op5-&gt;e</p>
+
       
     </div>
     <footer class="article-footer">
